@@ -15,7 +15,7 @@
 
 6. En su escritorio encontrará un acceso directo llamado Mach3Mill, este es el software a utilizar
 
-<p align="center"><img width="50" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/2%20acceso.png"></p>
+<p align="center"><img width="70" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/2%20acceso.png"></p>
 
 7. Luego de abrir el software, aparecerá una ventana emergente, donde deberá seleccionar el plugin **RnRMotionControllerECO2.0**
 
@@ -26,7 +26,7 @@
 10. Para accionar los motores, encienda las fuentes, y con la tecla ```Tab``` abra la interfaz manual, acá podrá configurar el modo de movimiento: Se recomienda usar Velocity Only para movimientos continuos que se detienen al soltar el mouse y Single step para giros predeterminados luego de cada click. La variable cycle jog step se encuentra dada en mm. Para pruebas iniciales se recomienda la siguiente configuración:
 
 
-<p align="center"><img width="100" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/3%20software.png"></p>
+<p align="center"><img width="400" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/3%20software.png"></p>
 
 
 
