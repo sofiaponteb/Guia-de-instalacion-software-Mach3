@@ -83,9 +83,9 @@ Desplácese hacia abajo en la tabla hasta encontrar la opción **EStop**, asegú
 Los finales de carrera se conectarán de forma paralela en la entrada 2 de la tarjeta Mach3.
 
 Desplácese hacia arriba en la tabla hasta encontrar las opciones:
-**X++, X--, Y++, Y--, Z++, Z--** asegúrese de que tienen marcada la opción ```Enabled``` e ingrese los siguientes valores:
+**X HOME, Y HOME, ZHOME** asegúrese de que tienen marcada la opción ```Enabled``` e ingrese los siguientes valores:
 - Port #: 3. Se refiere a la tarjeta Mach3
-- Pin Number: 2. Se refiere a la entrada número 2 (**IN2**) de la tarjeta
+- Pin Number: 3. Se refiere a la entrada número 3 (**IN3**) de la tarjeta
 
 <p align="center"><img width="400" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/finalescarrera.png"></p>
 
@@ -104,6 +104,13 @@ En el Gcode se usarán los siguientes códigos:
 - **M9:** Apagar válvula
 
 <p align="center"><img width="400" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/salidas.png"></p>
+
+### Importar GCode
+Para importar código G a ser usado en la máquina, seleccione la opción ```File > Load G-Code```. Seleccione el archivo que contiene el código a utilizar.
+
+El software soporta las extensiones ```.ncc```, ```.gcode```, ```.txt```
+
+En el repositorio puede encontrar un código de prueba ```prueba.txt``` 
 
 ## Referencias :open_book:
 - machsupport.com
