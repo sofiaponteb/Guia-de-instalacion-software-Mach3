@@ -46,9 +46,9 @@ A continuación se presentan algunas configuraciones a realizar en el software p
 ### Configurar Velocidad de los motores
 
 Dé click en la opción ```Config > Motor Tuning```, en la columna de la derecha seleccione el motor que desea configurar y en la parte inferior digite los valores que desea en cada ítem, se recomienda la siguiente configuración:
- - Steps:
- - Velocity:
- - Acceleration:
+ - Steps: 1600
+ - Velocity: 300
+ - Acceleration: 20
 
  Al finalizar la configuración de cada eje dé click en el botón **Save Axis Settings**, cuando acabe la configuración de todos los motores dé click en el botón **OK**
 
@@ -78,12 +78,14 @@ Desplácese hacia abajo en la tabla hasta encontrar la opción **EStop**, asegú
 
 <p align="center"><img width="400" src="https://github.com/sofiaponteb/Guia-de-instalacion-software-Mach3/blob/main/img/EStop.png"></p>
 
+> El botón de parada de emergencia se encarga de detener la rutina en funcionamiento, para reanudar el movimiento es necesario: primero, desactivar la parada de emergencia. Segundo, dar click en el botón de reinicio en el software Mach3. No se podrá realizar ningún movimiento con el dispositivo hasta que estas dos condiciones se cumplan en ese orden.
+
 **Finales de carrera**
 
 Los finales de carrera se conectarán de forma paralela en la entrada 2 de la tarjeta Mach3.
 
 Desplácese hacia arriba en la tabla hasta encontrar las opciones:
-**X HOME, Y HOME, ZHOME** asegúrese de que tienen marcada la opción ```Enabled``` e ingrese los siguientes valores:
+**X HOME, Y HOME, Z HOME** asegúrese de que tienen marcada la opción ```Enabled``` e ingrese los siguientes valores:
 - Port #: 3. Se refiere a la tarjeta Mach3
 - Pin Number: 3. Se refiere a la entrada número 3 (**IN3**) de la tarjeta
 
@@ -111,6 +113,10 @@ Para importar código G a ser usado en la máquina, seleccione la opción ```Fil
 El software soporta las extensiones ```.ncc```, ```.gcode```, ```.txt```
 
 En el repositorio puede encontrar un código de prueba ```prueba.txt``` 
+
+> **IMPORTANTE**: Si se desea probar código G línea por línea se debe dar click en el botón ```Single BLK```, o las teclas ```Alt + N```, para avanzar de línea se usa el botón ```Cycle Start```.
+
+De acuerdo a las pruebas realizadas, una unidad de desplazamiento de los ejes Y e Z en el software genera un desplazamiento de 5mm en la antorcha. Es decir, un código G que vaya de Z1 a Z2 moverá la antorcha 5mm en el eje Z. Una unidad de desplazamiento en el eje X genera un desplazamiento de 7.5mm en la antorcha
 
 ## Referencias :open_book:
 - machsupport.com
